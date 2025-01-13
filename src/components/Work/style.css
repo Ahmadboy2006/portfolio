@@ -1,0 +1,164 @@
+.work {
+    width: 100%;
+    min-height: 800px;
+    background-color: rgb(78, 19, 1);
+    padding: 30px var(--padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.work .title {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.work .title span {
+    color: rgb(250, 250, 19);
+}
+
+.work .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.work .card {
+    /* width: 390px; */
+    width: 31%;
+    height: 300px;
+    border-radius: 5px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.work .card:hover .content {
+    bottom: 0;
+}
+
+.work .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.work .card .content {
+    width: 100%;
+    height: 75%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -60%;
+    transition: all 0.3s ease;
+}
+
+.work .card .content .name {
+    height: 20%;
+    background: #ffd900;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.work .card .content .box {
+    width: 100%;
+    height: 75%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.work .card .content .box div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .card .content .box div a {
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    transition: var(--transition);
+}
+
+.work .card .content .box div a:hover {
+    background-color: var(--orange);
+}
+
+.work .btn {
+    width: 150px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    background-color: rgb(78, 19, 1);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-family: var(--nunito);
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(255, 60, 0, 0.4);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.work .btn i, .contact .btn i {
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.work .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.work .btn:hover i, .contact .btn:hover i  {
+    transform: translateX(5px);
+}
+
+@media screen and (max-width: 1280px) {
+    .work .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .work .card {
+        width: 48%;
+    }
+
+    .work .card .content .box div a {
+        padding: 7px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work .card {
+        width: 90%;
+    }
+
+    .work .card .content .box div a {
+        padding: 5px 15px;
+    }
+
+    .work .card .content .name {
+        font-size: 14px;
+    }
+
+    .work .card .content .box p {
+        font-size: 15px;
+    }
+}

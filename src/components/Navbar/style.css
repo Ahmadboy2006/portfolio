@@ -1,0 +1,133 @@
+.navbar-container {
+    height: 65px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+    z-index: 1000;
+}
+
+.nav-item-box {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item-box a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    text-transform: capitalize;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+.nav-item-box a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: top;
+    transition: transform 0.25s ease;
+}
+
+.nav-item-box a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-item-box a:hover {
+    color: blue;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav-item-box a.selected::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(1);
+    transform-origin: top;
+    transition: none;
+}
+
+.nav-item-box a.selected {
+    color: blue;
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+}
+
+.icon:nth-last-child(2) {
+    font-size: 22px;
+}
+
+.icon:nth-last-child(1) {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1280px) {
+    .nav-item-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .icon {
+        display: block;
+    }
+
+    .nav-item-box {
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        justify-content: unset;
+        right: 0;
+        top: 65px;
+        width: 400px;
+        background-color: var(--orange);
+        height: calc(100vh - 65px);
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .nav-item-box a {
+        display: inline;
+        width: 60%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item-box {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav-item-box {
+        width: 250px;
+    }
+
+    .nav-item-box a {
+        font-size: 18px;
+    }
+}

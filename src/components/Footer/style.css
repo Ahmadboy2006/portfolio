@@ -1,0 +1,119 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(78, 19, 1);
+    color: #fff;
+    padding: 10px var(--padding);
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .content>div:nth-child(1),
+.footer .content>div:nth-child(2) {
+    width: 360px;
+    margin-top: 20px;
+}
+
+.footer .content>div:nth-child(3) {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer .content h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.footer .content>div:nth-child(1) p {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.footer .content>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer .content>div:nth-child(2) a {
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+.footer .content>div:nth-child(2) a:hover {
+    color: var(--orange);
+}
+
+.footer .content>div:nth-child(3) p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #ccc;
+}
+
+.footer .content>div:nth-child(3) p i {
+    color: var(--orange);
+}
+
+.social-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-box>a>div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.social-box>a {
+    color: rgb(78, 19, 1);
+    transition: 0.2s;
+}
+
+.social-box>a>div:hover {
+    border: 1px solid white;
+    background-color: rgb(78, 19, 1);
+}
+
+.social-box>a:hover {
+    color: var(--orange);
+    transform: scale(0.98);
+}
+
+.footer>p {
+    border-top: 0.1rem solid #fff3;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--nunito);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer>p>span>a {
+    color: var(--orange);
+}
+
