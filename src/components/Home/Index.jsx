@@ -8,6 +8,7 @@ import { ReactComponent as TwitterX } from '../../assets/icons/twitter-x.svg';
 import { ReactComponent as Telegram } from '../../assets/icons/telegram.svg';
 import { ReactComponent as Instagram } from '../../assets/icons/instagram.svg';
 import { ReactComponent as TikTok } from '../../assets/icons/tiktok.svg';
+import "particles.js";
 const linkedin = 'https://www.linkedin.com/in/ahmad-hasanboyev-a5322732a/';
 const github = 'https://github.com/Ahmadboy2006';
 const twitterX = 'https://twitter.com';
@@ -15,9 +16,13 @@ const telegram = 'https://t.me/Prosta_ahmad';
 const instagram = 'https://www.instagram.com/prosta_axmad/';
 const tiktok = 'https://www.tiktok.com/@hukmdor__usmon';
 
-export { linkedin, github, twitterX, telegram, Linkedin, Github, TwitterX, Telegram}
+export { linkedin, github, twitterX, telegram, Linkedin, Github, TwitterX, Telegram }
 
 function Home() {
+
+  useEffect(() => {
+    window.particlesJS.load("particles-js", "/particles-config.json");
+  }, []);
 
   const el = useRef(null);
 
@@ -39,7 +44,7 @@ function Home() {
 
 
   return (
-    <div id='home' className="home-container">
+    <div className="home-container">
       <div className="home-title">
         <p className='home-bold'>Hi There,</p>
         <p className='home-bold'>I'm <span className='home-orange'>Khasanboyev Ahmad</span></p>
@@ -66,7 +71,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="home-img">
+      <div id='particles-js'>
 
       </div>
     </div>

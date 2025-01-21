@@ -6,6 +6,7 @@ import youTubeImg from '../../assets/images/project5.jpg';
 import designerFutureImg from '../../assets/images/project6.jpg';
 import womazingImg from '../../assets/images/project7.jpg';
 import rmcImg from '../../assets/images/project8.jpg';
+import crmImg from '../../assets/images/project9.jpg';
 
 const data = [
     [
@@ -75,18 +76,11 @@ const data = [
             linkCode: 'https://github.com/Ahmadboy2006/Houzing'
         },
         {
-            img: apartmentRentImg,
-            name: 'Apartment Rent 59',
-            description: 'This website is built using Html, Css and Js. This website is derived from figma, made for practice and not responsive. (15.6 inch)',
-            linkView: 'https://apartmentrent59.netlify.app',
-            linkCode: 'https://github.com/Ahmadboy2006/Apartment-rent-59'
-        },
-        {
             img: rmcImg,
             name: 'RMC',
             description: 'This website is built using React.js and Tailwind css. We completed this website together with our team in the shortest time and won the competition',
-            linkView: 'https://watergameaxa.netlify.app',
-            linkCode: 'https://github.com/Ahmadboy2006/water-game'
+            linkView: 'https://rmc-figma.netlify.app',
+            linkCode: 'https://github.com/Ahmadboy2006/RMC'
         },
         {
             img: youTubeImg,
@@ -109,6 +103,13 @@ const data = [
             linkView: 'https://figmawomazing.netlify.app',
             linkCode: 'https://github.com/Ahmadboy2006/womazing'
         },
+        {
+            img: crmImg,
+            name: 'CRM Panel',
+            description: 'This website is built using React.js and Tailwind css. We have custom made this website with our team. This website is fully responsive and has a backend',
+            linkView: 'https://crm-system-gamma.vercel.app',
+            linkCode: 'https://github.com/Ravshanbek0/CRM-system'
+        }
     ]
 ];
 
